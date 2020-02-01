@@ -11,7 +11,7 @@
 	<groupId>joesoft</groupId>
 	<artifactId>lab3-2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lab3-2</name>
+	<name>address-book-app</name>
 	<description>Demo project for Spring MVC</description>
 
 	<properties>
