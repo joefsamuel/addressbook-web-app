@@ -9,12 +9,13 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>joesoft</groupId>
-	<artifactId>lab3-2</artifactId>
+	<artifactId>sysc4806</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>address-book-app</name>
 	<description>Demo project for Spring MVC</description>
 
 	<properties>
+		<jar.finalName>${project.name}</jar.finalName>
 		<java.version>1.8</java.version>
 	</properties>
 
