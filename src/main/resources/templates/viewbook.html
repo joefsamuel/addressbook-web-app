@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>List of buddies | JoeSoft</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Here's a list of buddies added to your book:</h1>
+<ul>
+    <th:block th:object="${buddiesList}">
+        <li th:each="buddy : ${buddiesList}" th:text="'Name:' + ${buddy.name} + ' Phone:'+ ${buddy.phoneNumber}"></li>
+    </th:block>
+</ul>
+<p>Remove a buddy <a href="/removebuddy">here</a></p>
+</body>
+</html>`
