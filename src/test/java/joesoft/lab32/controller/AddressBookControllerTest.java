@@ -25,7 +25,7 @@ class AddressBookControllerTest {
     @Test
     void addBuddyInfoAPI() throws Exception{
         mvc.perform(MockMvcRequestBuilders.get("/newbook"));
-        mvc.perform(MockMvcRequestBuilders.get("/api/addbuddy?name=joe&phone=232323&address=1233%20Colonel").accept(MediaType.APPLICATION_JSON))
+        mvc.perform(MockMvcRequestBuilders.get("/api/addbuddy?name=joe&phone=232323&address=1233 Colonel").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("{\"id\":1,\"name\":\"joe\",\"phoneNumber\":\"232323\",\"address\":\"1233 Colonel\"}")));
     }
