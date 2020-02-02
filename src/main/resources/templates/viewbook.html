@@ -11,6 +11,7 @@
         <li th:each="buddy : ${buddiesList}" th:text="'Name:' + ${buddy.name} + ' Phone:'+ ${buddy.phoneNumber}"></li>
     </th:block>
 </ul>
+<p>Create a new buddy <a href="/addbuddy">here</a></p>
 <p>Remove a buddy <a href="/removebuddy">here</a></p>
 </body>
 </html>`
