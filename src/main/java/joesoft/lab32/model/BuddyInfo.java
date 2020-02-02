@@ -14,6 +14,7 @@ public class BuddyInfo {
     private Long id;
     private String name;
     private String phoneNumber;
+    private String address;
 
     @ManyToOne
     private AddressBook addressBook;
@@ -31,10 +32,11 @@ public class BuddyInfo {
      * @param name name of the buddy
      * @param phoneNumber phone number of the buddy
      */
-    public BuddyInfo(Long id, String name, String phoneNumber) {
+    public BuddyInfo(Long id, String name, String phoneNumber, String address) {
         this.id = id;
         this.name = name;
         this.phoneNumber = phoneNumber;
+        this.address = address;
     }
 
     /**
@@ -94,5 +96,20 @@ public class BuddyInfo {
         this.name = name;
     }
 
+    /**
+     * Get the address of the BuddyInfo object
+     * @return address as a string
+     */
+    public String getAddress() {
+        return address;
+    }
+
+    /**
+     * Set the address of buddy for BuddyInfo object
+     * @param address String parameter
+     */
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }
 

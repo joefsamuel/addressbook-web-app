@@ -37,9 +37,9 @@ public class AddressBookController {
      */
     @GetMapping("/api/addbuddy")
     @ResponseBody
-    public BuddyInfo addBuddyInfoAPI(@RequestParam(name = "name", required=true) String name, @RequestParam(name = "phone", required = true) String phone){
+    public BuddyInfo addBuddyInfoAPI(@RequestParam(name = "name", required=true) String name, @RequestParam(name = "phone", required = true) String phone, @RequestParam(name = "address", required = true) String address){
         if(book != null){
-            BuddyInfo buddyInfo = new BuddyInfo(buddyCounter.incrementAndGet(), name, phone);
+            BuddyInfo buddyInfo = new BuddyInfo(buddyCounter.incrementAndGet(), name, phone, address);
             book.addBuddy(buddyInfo);
             return buddyInfo;
         }

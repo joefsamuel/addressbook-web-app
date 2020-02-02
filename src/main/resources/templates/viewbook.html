@@ -8,7 +8,7 @@
 <h1>Here's a list of buddies added to your book:</h1>
 <ul>
     <th:block th:object="${buddiesList}">
-        <li th:each="buddy : ${buddiesList}" th:text="'Name:' + ${buddy.name} + ' Phone:'+ ${buddy.phoneNumber}"></li>
+        <li th:each="buddy : ${buddiesList}" th:text="'Name:' + ${buddy.name} + ' Phone:'+ ${buddy.phoneNumber} + ' Address:'+ ${buddy.address}"></li>
     </th:block>
 </ul>
 <p>Create a new buddy <a href="/addbuddy">here</a></p>
