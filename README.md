@@ -1,2 +1,2 @@
-# addressbook-web-app
-For SYSC 4806
+# JoeSoft's Address Book
+[![Build Status](https://travis-ci.org/joefsamuel/addressbook-web-app.svg?branch=master)](https://travis-ci.org/joefsamuel/addressbook-web-app)
