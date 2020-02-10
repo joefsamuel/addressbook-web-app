@@ -113,6 +113,7 @@ public class AddressBookController {
      * API for viewing AddressBook object
      * @return JSON of AddressBook object
      */
+    @CrossOrigin(origins = "http://localhost:8080/")
     @GetMapping("/api/viewbook")
     @ResponseBody
     public AddressBook viewBookAPI(){
