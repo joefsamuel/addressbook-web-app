@@ -35,6 +35,7 @@ public class AddressBookController {
      * @param phone
      * @return a JSON object within the AddressBook object
      */
+    @CrossOrigin
     @GetMapping("/api/addbuddy")
     @ResponseBody
     public BuddyInfo addBuddyInfoAPI(@RequestParam(name = "name", required=true) String name, @RequestParam(name = "phone", required = true) String phone, @RequestParam(name = "address", required = true) String address){
@@ -76,6 +77,7 @@ public class AddressBookController {
      * API for removing an existing BuddyInfo object
      * @param name
      */
+    @CrossOrigin
     @GetMapping("/api/removebuddy")
     @ResponseBody
     public String removeBuddyInfoAPI(@RequestParam(name = "name", required=true) String name){
